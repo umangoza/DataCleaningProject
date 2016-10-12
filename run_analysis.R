@@ -1,0 +1,13 @@
+filesPath <- "C:/Users/sultan1989/Desktop/UCI HAR Dataset"
+dataSubjectTrain <- tbl_df(read.table(file.path(filesPath, "train", "subject_train.txt")))
+dataSubjectTest  <- tbl_df(read.table(file.path(filesPath, "test" , "subject_test.txt" )))
+load("C:/Users/sultan1989/Desktop/UCI HAR Dataset/run_analysis")
+View(activityLabels)
+View(alldataActivity)
+View(dataAggr)
+View(dataTrain)
+View(dataTable)
+View(dataSubjectTrain)
+View(dataActivityTest)
+View(activityLabels)
+savehistory("C:/Users/sultan1989/Desktop/run_analysis.R")
